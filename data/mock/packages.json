@@ -1,0 +1,156 @@
+{
+  "data": {
+    "nodePackages": {
+      "__typename": "NodePackageConnection",
+      "nodes": [
+        {
+          "__typename": "NodePackage",
+          "id": "package-wedding",
+          "title": "Signature Wedding Package",
+          "path": "/packages/signature-wedding",
+          "body": {
+            "processed": "<p>Our all-inclusive Signature Wedding Package takes the stress out of planning your perfect day. From the ceremony to the last dance, our experienced coordinators handle every detail so you can focus on celebrating with the people you love.</p><p>This package includes full use of your chosen ceremony and reception space, catering for up to 200 guests, a premium open bar, and a dedicated wedding coordinator from planning through execution.</p>",
+            "summary": "Our all-inclusive Signature Wedding Package takes the stress out of planning your perfect day. From the ceremony to the last dance, our experienced coordinators handle every detail so you can focus on"
+          },
+          "price": "From $15,000",
+          "guestCount": "Up to 200 guests",
+          "duration": "8 hours",
+          "includes": [
+            "Ceremony and reception space",
+            "Custom catering menu",
+            "Premium open bar",
+            "Wedding coordinator",
+            "Table linens and place settings",
+            "Dance floor and sound system",
+            "Bridal suite access",
+            "Complimentary tasting for 4"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80",
+            "alt": "Beautifully decorated wedding reception with flowers and candles",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodePackage",
+          "id": "package-corporate",
+          "title": "Corporate Event Package",
+          "path": "/packages/corporate-event",
+          "body": {
+            "processed": "<p>Impress your clients and team with our Corporate Event Package, designed for professional gatherings that make an impact. Whether you're hosting a product launch, annual meeting, or awards ceremony, we provide everything you need for a polished and productive event.</p><p>Our dedicated events team works with your brand guidelines to ensure a seamless, on-brand experience from arrival to departure.</p>",
+            "summary": "Impress your clients and team with our Corporate Event Package, designed for professional gatherings that make an impact. Whether you're hosting a product launch, annual meeting, or awards ceremony, w"
+          },
+          "price": "From $8,000",
+          "guestCount": "Up to 300 guests",
+          "duration": "6 hours",
+          "includes": [
+            "Choice of event space",
+            "AV equipment and tech support",
+            "Catered lunch or dinner",
+            "Coffee and beverage service",
+            "Registration desk setup",
+            "Custom signage and branding",
+            "Dedicated event manager",
+            "On-site parking coordination"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80",
+            "alt": "Corporate event with professional stage and audience",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodePackage",
+          "id": "package-social",
+          "title": "Social Celebration Package",
+          "path": "/packages/social-celebration",
+          "body": {
+            "processed": "<p>From milestone birthdays to anniversary parties, our Social Celebration Package is perfect for life's special moments. This flexible package can be tailored to any theme or style, with our creative team ready to bring your vision to life.</p><p>Includes access to your chosen venue space, a customized food and beverage package, entertainment coordination, and a personal event planner to handle every detail.</p>",
+            "summary": "From milestone birthdays to anniversary parties, our Social Celebration Package is perfect for life's special moments. This flexible package can be tailored to any theme or style, with our creative te"
+          },
+          "price": "From $5,000",
+          "guestCount": "Up to 150 guests",
+          "duration": "5 hours",
+          "includes": [
+            "Choice of event space",
+            "Customized menu",
+            "Bar service",
+            "Event planner",
+            "Table decor and linens",
+            "Sound system and microphone",
+            "Photo area setup",
+            "Valet parking"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&q=80",
+            "alt": "Festive celebration party with decorations and guests",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

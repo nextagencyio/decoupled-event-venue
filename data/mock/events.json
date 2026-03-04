@@ -1,0 +1,159 @@
+{
+  "data": {
+    "nodeEvents": {
+      "__typename": "NodeEventConnection",
+      "nodes": [
+        {
+          "__typename": "NodeEvent",
+          "id": "event-spring-gala",
+          "title": "Annual Spring Gala",
+          "path": "/events/spring-gala",
+          "body": {
+            "processed": "<p>Join us for our signature Annual Spring Gala, an enchanting evening of fine dining, live entertainment, and dancing in the Grand Ballroom. This black-tie affair celebrates the arrival of spring with seasonal cuisine, flowing champagne, and a live orchestra.</p><h2>Evening Schedule</h2><ul><li>6:00 PM - Cocktail reception on the Garden Terrace</li><li>7:30 PM - Seated dinner in the Grand Ballroom</li><li>9:00 PM - Live orchestra and dancing</li><li>11:00 PM - Dessert lounge and nightcap</li></ul>",
+            "summary": "Join us for our signature Annual Spring Gala, an enchanting evening of fine dining, live entertainment, and dancing in the Grand Ballroom. This black-tie affair celebrates the arrival of spring with s"
+          },
+          "eventDate": {
+            "timestamp": 1777158000
+          },
+          "endDate": {
+            "timestamp": 1777176000
+          },
+          "venueLocation": "Grand Ballroom & Garden Terrace",
+          "eventCategory": [
+            {
+              "id": "gala",
+              "name": "gala"
+            }
+          ],
+          "ticketPrice": "$175 per person",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+            "alt": "Elegant gala event with guests in formal attire",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeEvent",
+          "id": "event-jazz-series",
+          "title": "Rooftop Jazz Series",
+          "path": "/events/rooftop-jazz-series",
+          "body": {
+            "processed": "<p>Every Friday evening through the summer, our Rooftop Lounge transforms into a live jazz venue. Enjoy craft cocktails, small plates, and world-class jazz performers against the backdrop of a stunning sunset. No tickets required for hotel guests.</p><p>Featured artists rotate weekly, showcasing both established jazz legends and emerging talents from the local scene.</p>",
+            "summary": "Every Friday evening through the summer, our Rooftop Lounge transforms into a live jazz venue. Enjoy craft cocktails, small plates, and world-class jazz performers against the backdrop of a stunning s"
+          },
+          "eventDate": {
+            "timestamp": 1777680000
+          },
+          "endDate": {
+            "timestamp": 1777690800
+          },
+          "venueLocation": "Rooftop Lounge",
+          "eventCategory": [
+            {
+              "id": "concert",
+              "name": "concert"
+            }
+          ],
+          "ticketPrice": "$45 per person",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=800&q=80",
+            "alt": "Jazz musicians performing on rooftop at sunset",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeEvent",
+          "id": "event-bridal-showcase",
+          "title": "Spring Bridal Showcase",
+          "path": "/events/bridal-showcase",
+          "body": {
+            "processed": "<p>Tour all of our stunning venues, meet our preferred vendors, and sample cuisine from our award-winning catering team at our annual Spring Bridal Showcase. Engaged couples will enjoy complimentary champagne, live floral demonstrations, and exclusive booking incentives.</p><h2>What to Expect</h2><ul><li>Guided tours of all event spaces</li><li>Food and cake tastings</li><li>Live floral arrangement demonstrations</li><li>DJ and band showcases</li><li>Exclusive same-day booking discounts</li></ul>",
+            "summary": "Tour all of our stunning venues, meet our preferred vendors, and sample cuisine from our award-winning catering team at our annual Spring Bridal Showcase. Engaged couples will enjoy complimentary cham"
+          },
+          "eventDate": {
+            "timestamp": 1774195200
+          },
+          "endDate": {
+            "timestamp": 1774213200
+          },
+          "venueLocation": "All Spaces",
+          "eventCategory": [
+            {
+              "id": "wedding",
+              "name": "wedding"
+            }
+          ],
+          "ticketPrice": "Free admission",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&q=80",
+            "alt": "Bridal showcase with elegant table settings and flowers",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

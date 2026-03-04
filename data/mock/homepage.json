@@ -1,0 +1,59 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Welcome to The Sterling Estate",
+          "path": "/homepage",
+          "heroTitle": "Where Unforgettable Moments Begin",
+          "heroSubtitle": "Premier Event Venue & Celebration Space",
+          "heroDescription": {
+            "processed": "<p>The Sterling Estate offers a collection of breathtaking indoor and outdoor event spaces, each designed to bring your vision to life. From intimate gatherings to grand celebrations, our dedicated team ensures every detail is flawless.</p>",
+            "summary": "The Sterling Estate offers a collection of breathtaking indoor and outdoor event spaces, each designed to bring your vision to life. From intimate gatherings to grand celebrations, our dedicated team "
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-events",
+              "title": "",
+              "number": "2,500+",
+              "label": "Events Hosted"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-sqft",
+              "title": "",
+              "number": "50,000",
+              "label": "Sq Ft of Event Space"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-guests",
+              "title": "",
+              "number": "1,000",
+              "label": "Max Guest Capacity"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-rating",
+              "title": "",
+              "number": "4.9",
+              "label": "Client Rating"
+            }
+          ],
+          "featuredSpacesTitle": "Our Signature Spaces",
+          "ctaTitle": "Ready to Plan Your Event?",
+          "ctaDescription": {
+            "processed": "<p>Our experienced event coordinators are here to help you create the perfect occasion. Schedule a tour of our stunning spaces and let us bring your vision to life.</p>",
+            "summary": "Our experienced event coordinators are here to help you create the perfect occasion. Schedule a tour of our stunning spaces and let us bring your vision to life."
+          },
+          "ctaPrimary": "Schedule a Tour",
+          "ctaSecondary": "View Packages"
+        }
+      ]
+    }
+  }
+}

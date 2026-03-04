@@ -1,0 +1,374 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Event venue homepage with hero, stats, featured spaces, and CTA",
+      "fields": [
+        { "id": "hero_title", "label": "Hero Title", "type": "string" },
+        { "id": "hero_subtitle", "label": "Hero Subtitle", "type": "string" },
+        { "id": "hero_description", "label": "Hero Description", "type": "text" },
+        { "id": "stats_items", "label": "Statistics", "type": "paragraph(stat_item)[]" },
+        { "id": "featured_spaces_title", "label": "Featured Spaces Title", "type": "string" },
+        { "id": "cta_title", "label": "CTA Title", "type": "string" },
+        { "id": "cta_description", "label": "CTA Description", "type": "text" },
+        { "id": "cta_primary", "label": "Primary CTA", "type": "string" },
+        { "id": "cta_secondary", "label": "Secondary CTA", "type": "string" }
+      ]
+    },
+    {
+      "bundle": "venue_space",
+      "label": "Venue Space",
+      "description": "Individual event spaces available for booking",
+      "body": true,
+      "fields": [
+        { "id": "capacity", "label": "Capacity", "type": "integer" },
+        { "id": "square_footage", "label": "Square Footage", "type": "integer" },
+        { "id": "space_type", "label": "Space Type", "type": "term(space_types)[]" },
+        { "id": "amenities", "label": "Amenities", "type": "string[]" },
+        { "id": "price_range", "label": "Price Range", "type": "string" },
+        { "id": "image", "label": "Space Image", "type": "image" }
+      ]
+    },
+    {
+      "bundle": "event",
+      "label": "Event",
+      "description": "Upcoming events hosted at the venue",
+      "body": true,
+      "fields": [
+        { "id": "event_date", "label": "Event Date", "type": "datetime" },
+        { "id": "end_date", "label": "End Date", "type": "datetime" },
+        { "id": "venue_location", "label": "Venue Location", "type": "string" },
+        { "id": "event_category", "label": "Event Category", "type": "term(event_categories)[]" },
+        { "id": "ticket_price", "label": "Ticket Price", "type": "string" },
+        { "id": "image", "label": "Event Image", "type": "image" }
+      ]
+    },
+    {
+      "bundle": "package",
+      "label": "Event Package",
+      "description": "All-inclusive event packages for different occasions",
+      "body": true,
+      "fields": [
+        { "id": "price", "label": "Starting Price", "type": "string" },
+        { "id": "guest_count", "label": "Guest Count", "type": "string" },
+        { "id": "duration", "label": "Duration", "type": "string" },
+        { "id": "includes", "label": "Package Includes", "type": "string[]" },
+        { "id": "image", "label": "Package Image", "type": "image" }
+      ]
+    },
+    {
+      "bundle": "testimonial",
+      "label": "Testimonial",
+      "description": "Client testimonials and reviews",
+      "body": true,
+      "fields": [
+        { "id": "client_name", "label": "Client Name", "type": "string" },
+        { "id": "event_type_name", "label": "Event Type", "type": "string" },
+        { "id": "rating", "label": "Rating", "type": "integer" },
+        { "id": "event_date_held", "label": "Event Date", "type": "datetime" }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Statistic Item",
+      "fields": [
+        { "id": "number", "label": "Number", "type": "string!" },
+        { "id": "label", "label": "Label", "type": "string!" }
+      ]
+    }
+  ],
+  "taxonomies": [
+    {
+      "vocabulary": "space_types",
+      "label": "Space Types",
+      "terms": ["Ballroom", "Garden", "Rooftop", "Conference Room", "Courtyard", "Chapel"]
+    },
+    {
+      "vocabulary": "event_categories",
+      "label": "Event Categories",
+      "terms": ["Wedding", "Corporate", "Gala", "Concert", "Conference", "Private Party"]
+    }
+  ],
+  "content": [
+    {
+      "id": "stat-events",
+      "type": "paragraph.stat_item",
+      "values": { "number": "2,500+", "label": "Events Hosted" }
+    },
+    {
+      "id": "stat-sqft",
+      "type": "paragraph.stat_item",
+      "values": { "number": "50,000", "label": "Sq Ft of Event Space" }
+    },
+    {
+      "id": "stat-guests",
+      "type": "paragraph.stat_item",
+      "values": { "number": "1,000", "label": "Max Guest Capacity" }
+    },
+    {
+      "id": "stat-rating",
+      "type": "paragraph.stat_item",
+      "values": { "number": "4.9", "label": "Client Rating" }
+    },
+    {
+      "id": "homepage",
+      "type": "node.homepage",
+      "path": "/homepage",
+      "values": {
+        "title": "Welcome to The Sterling Estate",
+        "hero_title": "Where Unforgettable Moments Begin",
+        "hero_subtitle": "Premier Event Venue & Celebration Space",
+        "hero_description": "<p>The Sterling Estate offers a collection of breathtaking indoor and outdoor event spaces, each designed to bring your vision to life. From intimate gatherings to grand celebrations, our dedicated team ensures every detail is flawless.</p>",
+        "stats_items": ["@stat-events", "@stat-sqft", "@stat-guests", "@stat-rating"],
+        "featured_spaces_title": "Our Signature Spaces",
+        "cta_title": "Ready to Plan Your Event?",
+        "cta_description": "<p>Our experienced event coordinators are here to help you create the perfect occasion. Schedule a tour of our stunning spaces and let us bring your vision to life.</p>",
+        "cta_primary": "Schedule a Tour",
+        "cta_secondary": "View Packages"
+      }
+    },
+    {
+      "id": "space-grand-ballroom",
+      "type": "node.venue_space",
+      "path": "/spaces/grand-ballroom",
+      "values": {
+        "title": "The Grand Ballroom",
+        "body": "<p>Our flagship space, The Grand Ballroom, is a stunning 8,000-square-foot room featuring soaring 24-foot ceilings, crystal chandeliers, and floor-to-ceiling windows that flood the space with natural light. The room can be configured for seated dinners, cocktail receptions, or theater-style presentations.</p><h2>Highlights</h2><ul><li>Stunning crystal chandelier centerpiece</li><li>Built-in sound system and stage</li><li>Adjustable LED lighting in any color palette</li><li>Direct access to outdoor terrace</li><li>Private bridal suite adjacent</li></ul>",
+        "capacity": 500,
+        "square_footage": 8000,
+        "space_type": ["ballroom"],
+        "amenities": ["Crystal chandeliers", "Built-in sound system", "Stage", "LED lighting", "Bridal suite", "Coat check"],
+        "price_range": "From $5,000",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80",
+          "alt": "Grand ballroom with crystal chandeliers and elegant decor"
+        }
+      }
+    },
+    {
+      "id": "space-garden-terrace",
+      "type": "node.venue_space",
+      "path": "/spaces/garden-terrace",
+      "values": {
+        "title": "The Garden Terrace",
+        "body": "<p>Surrounded by lush landscaping, the Garden Terrace is a romantic outdoor space perfect for ceremonies and receptions under the stars. Featuring manicured hedges, a stone fountain, and twinkling string lights, this space captures the essence of al fresco elegance.</p><h2>Highlights</h2><ul><li>Manicured gardens with seasonal blooms</li><li>Stone fountain centerpiece</li><li>String light canopy</li><li>Covered pavilion for weather backup</li><li>Dedicated bar area</li></ul>",
+        "capacity": 250,
+        "square_footage": 5000,
+        "space_type": ["garden", "courtyard"],
+        "amenities": ["String lights", "Stone fountain", "Covered pavilion", "Outdoor bar", "Garden seating", "Heaters available"],
+        "price_range": "From $3,500",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&q=80",
+          "alt": "Beautiful garden terrace with string lights and fountain"
+        }
+      }
+    },
+    {
+      "id": "space-rooftop-lounge",
+      "type": "node.venue_space",
+      "path": "/spaces/rooftop-lounge",
+      "values": {
+        "title": "The Rooftop Lounge",
+        "body": "<p>Perched atop The Sterling Estate, our Rooftop Lounge offers panoramic city views and a modern, sophisticated atmosphere. This contemporary space is ideal for cocktail parties, corporate mixers, and milestone celebrations with a view.</p><h2>Highlights</h2><ul><li>360-degree panoramic city views</li><li>Modern lounge furniture</li><li>Full-service bar with craft cocktails</li><li>Fire pit gathering area</li><li>Climate-controlled retractable roof</li></ul>",
+        "capacity": 150,
+        "square_footage": 3000,
+        "space_type": ["rooftop"],
+        "amenities": ["Panoramic views", "Retractable roof", "Fire pit", "Full bar", "Lounge furniture", "DJ booth"],
+        "price_range": "From $4,000",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+          "alt": "Rooftop lounge with city skyline views at sunset"
+        }
+      }
+    },
+    {
+      "id": "space-chapel",
+      "type": "node.venue_space",
+      "path": "/spaces/the-chapel",
+      "values": {
+        "title": "The Chapel",
+        "body": "<p>Our intimate Chapel is a beautifully restored historic space featuring original stained glass windows, exposed brick walls, and warm wood accents. Perfect for wedding ceremonies, vow renewals, and small, meaningful gatherings.</p><h2>Highlights</h2><ul><li>Original stained glass windows</li><li>Exposed brick and wood beams</li><li>Baby grand piano</li><li>Natural acoustics</li><li>Candlelit ambiance</li></ul>",
+        "capacity": 100,
+        "square_footage": 1500,
+        "space_type": ["chapel"],
+        "amenities": ["Stained glass windows", "Baby grand piano", "Natural acoustics", "Candlelight fixtures", "Flower arrangements"],
+        "price_range": "From $2,000",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
+          "alt": "Intimate chapel with stained glass windows and warm lighting"
+        }
+      }
+    },
+    {
+      "id": "event-spring-gala",
+      "type": "node.event",
+      "path": "/events/spring-gala",
+      "values": {
+        "title": "Annual Spring Gala",
+        "body": "<p>Join us for our signature Annual Spring Gala, an enchanting evening of fine dining, live entertainment, and dancing in the Grand Ballroom. This black-tie affair celebrates the arrival of spring with seasonal cuisine, flowing champagne, and a live orchestra.</p><h2>Evening Schedule</h2><ul><li>6:00 PM - Cocktail reception on the Garden Terrace</li><li>7:30 PM - Seated dinner in the Grand Ballroom</li><li>9:00 PM - Live orchestra and dancing</li><li>11:00 PM - Dessert lounge and nightcap</li></ul>",
+        "event_date": "2026-04-25T18:00:00",
+        "end_date": "2026-04-25T23:00:00",
+        "venue_location": "Grand Ballroom & Garden Terrace",
+        "event_category": ["gala"],
+        "ticket_price": "$175 per person",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+          "alt": "Elegant gala event with guests in formal attire"
+        }
+      }
+    },
+    {
+      "id": "event-jazz-series",
+      "type": "node.event",
+      "path": "/events/rooftop-jazz-series",
+      "values": {
+        "title": "Rooftop Jazz Series",
+        "body": "<p>Every Friday evening through the summer, our Rooftop Lounge transforms into a live jazz venue. Enjoy craft cocktails, small plates, and world-class jazz performers against the backdrop of a stunning sunset. No tickets required for hotel guests.</p><p>Featured artists rotate weekly, showcasing both established jazz legends and emerging talents from the local scene.</p>",
+        "event_date": "2026-05-01T19:00:00",
+        "end_date": "2026-05-01T22:00:00",
+        "venue_location": "Rooftop Lounge",
+        "event_category": ["concert"],
+        "ticket_price": "$45 per person",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=800&q=80",
+          "alt": "Jazz musicians performing on rooftop at sunset"
+        }
+      }
+    },
+    {
+      "id": "event-bridal-showcase",
+      "type": "node.event",
+      "path": "/events/bridal-showcase",
+      "values": {
+        "title": "Spring Bridal Showcase",
+        "body": "<p>Tour all of our stunning venues, meet our preferred vendors, and sample cuisine from our award-winning catering team at our annual Spring Bridal Showcase. Engaged couples will enjoy complimentary champagne, live floral demonstrations, and exclusive booking incentives.</p><h2>What to Expect</h2><ul><li>Guided tours of all event spaces</li><li>Food and cake tastings</li><li>Live floral arrangement demonstrations</li><li>DJ and band showcases</li><li>Exclusive same-day booking discounts</li></ul>",
+        "event_date": "2026-03-22T11:00:00",
+        "end_date": "2026-03-22T16:00:00",
+        "venue_location": "All Spaces",
+        "event_category": ["wedding"],
+        "ticket_price": "Free admission",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&q=80",
+          "alt": "Bridal showcase with elegant table settings and flowers"
+        }
+      }
+    },
+    {
+      "id": "package-wedding",
+      "type": "node.package",
+      "path": "/packages/signature-wedding",
+      "values": {
+        "title": "Signature Wedding Package",
+        "body": "<p>Our all-inclusive Signature Wedding Package takes the stress out of planning your perfect day. From the ceremony to the last dance, our experienced coordinators handle every detail so you can focus on celebrating with the people you love.</p><p>This package includes full use of your chosen ceremony and reception space, catering for up to 200 guests, a premium open bar, and a dedicated wedding coordinator from planning through execution.</p>",
+        "price": "From $15,000",
+        "guest_count": "Up to 200 guests",
+        "duration": "8 hours",
+        "includes": ["Ceremony and reception space", "Custom catering menu", "Premium open bar", "Wedding coordinator", "Table linens and place settings", "Dance floor and sound system", "Bridal suite access", "Complimentary tasting for 4"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80",
+          "alt": "Beautifully decorated wedding reception with flowers and candles"
+        }
+      }
+    },
+    {
+      "id": "package-corporate",
+      "type": "node.package",
+      "path": "/packages/corporate-event",
+      "values": {
+        "title": "Corporate Event Package",
+        "body": "<p>Impress your clients and team with our Corporate Event Package, designed for professional gatherings that make an impact. Whether you're hosting a product launch, annual meeting, or awards ceremony, we provide everything you need for a polished and productive event.</p><p>Our dedicated events team works with your brand guidelines to ensure a seamless, on-brand experience from arrival to departure.</p>",
+        "price": "From $8,000",
+        "guest_count": "Up to 300 guests",
+        "duration": "6 hours",
+        "includes": ["Choice of event space", "AV equipment and tech support", "Catered lunch or dinner", "Coffee and beverage service", "Registration desk setup", "Custom signage and branding", "Dedicated event manager", "On-site parking coordination"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80",
+          "alt": "Corporate event with professional stage and audience"
+        }
+      }
+    },
+    {
+      "id": "package-social",
+      "type": "node.package",
+      "path": "/packages/social-celebration",
+      "values": {
+        "title": "Social Celebration Package",
+        "body": "<p>From milestone birthdays to anniversary parties, our Social Celebration Package is perfect for life's special moments. This flexible package can be tailored to any theme or style, with our creative team ready to bring your vision to life.</p><p>Includes access to your chosen venue space, a customized food and beverage package, entertainment coordination, and a personal event planner to handle every detail.</p>",
+        "price": "From $5,000",
+        "guest_count": "Up to 150 guests",
+        "duration": "5 hours",
+        "includes": ["Choice of event space", "Customized menu", "Bar service", "Event planner", "Table decor and linens", "Sound system and microphone", "Photo area setup", "Valet parking"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&q=80",
+          "alt": "Festive celebration party with decorations and guests"
+        }
+      }
+    },
+    {
+      "id": "testimonial-wedding",
+      "type": "node.testimonial",
+      "path": "/testimonials/dream-wedding",
+      "values": {
+        "title": "Our Dream Wedding Come True",
+        "body": "<p>From the moment we toured The Sterling Estate, we knew it was the place for our wedding. The Grand Ballroom was absolutely breathtaking, and our coordinator Sarah went above and beyond to make sure every detail was perfect. Our guests are still raving about the food and the stunning garden ceremony. We couldn't have asked for a more magical day.</p>",
+        "client_name": "Jessica & Michael Torres",
+        "event_type_name": "Wedding Reception",
+        "rating": 5,
+        "event_date_held": "2025-10-18T16:00:00"
+      }
+    },
+    {
+      "id": "testimonial-corporate",
+      "type": "node.testimonial",
+      "path": "/testimonials/outstanding-corporate-event",
+      "values": {
+        "title": "Outstanding Corporate Event",
+        "body": "<p>We hosted our annual company gala for 250 employees at The Sterling Estate and it was flawless. The AV setup was professional, the catering was outstanding, and the staff anticipated every need before we even asked. Our CEO called it the best company event in our 20-year history. We've already booked for next year.</p>",
+        "client_name": "David Chen, VP of Operations",
+        "event_type_name": "Corporate Gala",
+        "rating": 5,
+        "event_date_held": "2025-12-05T18:00:00"
+      }
+    },
+    {
+      "id": "testimonial-birthday",
+      "type": "node.testimonial",
+      "path": "/testimonials/unforgettable-birthday",
+      "values": {
+        "title": "An Unforgettable 50th Birthday",
+        "body": "<p>I surprised my husband with his 50th birthday party at the Rooftop Lounge and the entire experience exceeded every expectation. The views, the cocktails, the food — everything was perfection. The event planning team was incredibly creative and helped me pull off the surprise without a hitch. Thank you for making this milestone truly special.</p>",
+        "client_name": "Angela Washington",
+        "event_type_name": "Birthday Celebration",
+        "rating": 5,
+        "event_date_held": "2026-01-25T19:00:00"
+      }
+    },
+    {
+      "id": "page-about",
+      "type": "node.page",
+      "path": "/about",
+      "values": {
+        "title": "About The Sterling Estate",
+        "body": "<p>For over three decades, The Sterling Estate has been the premier destination for life's most meaningful celebrations. Nestled on 12 acres of beautifully landscaped grounds, our historic property combines old-world charm with modern sophistication.</p><h2>Our History</h2><p>Originally built in 1928 as a private estate, the property was lovingly restored in 1992 and transformed into the region's most sought-after event venue. Every renovation has honored the building's architectural heritage while incorporating contemporary amenities.</p><h2>Our Promise</h2><p>We believe every event deserves undivided attention and meticulous care. Our team of experienced coordinators, award-winning chefs, and dedicated service staff work together to ensure your event is nothing short of extraordinary.</p><h2>Recognition</h2><ul><li>Voted #1 Event Venue by City Magazine, 2024 & 2025</li><li>The Knot Best of Weddings, 10 consecutive years</li><li>AAA Four Diamond Catering Award</li><li>Green Events Certification for sustainable practices</li></ul>"
+      }
+    },
+    {
+      "id": "page-faq",
+      "type": "node.page",
+      "path": "/faq",
+      "values": {
+        "title": "Frequently Asked Questions",
+        "body": "<h2>What is the booking process?</h2><p>We recommend scheduling a tour to view our spaces in person. After your visit, your event coordinator will help you select the ideal space and package. A signed contract and deposit secure your date.</p><h2>How far in advance should I book?</h2><p>For weddings, we recommend booking 12-18 months in advance, especially for peak season (May-October). Corporate and social events can typically be accommodated with 3-6 months notice, depending on availability.</p><h2>Do you provide catering?</h2><p>Yes, all food and beverage is provided by our in-house culinary team led by Executive Chef Marco Rossi. We offer custom menu creation, tastings, and accommodations for all dietary needs.</p><h2>Is there parking available?</h2><p>We offer a large parking lot with space for 200 vehicles. Valet parking is available for an additional fee and is included in some of our event packages.</p><h2>Can I bring my own vendors?</h2><p>We work with a list of preferred vendors for services such as florals, entertainment, and photography. However, we are happy to discuss accommodating your preferred vendors on a case-by-case basis.</p>"
+      }
+    }
+  ]
+}

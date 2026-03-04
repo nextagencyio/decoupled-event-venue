@@ -1,0 +1,57 @@
+{
+  "data": {
+    "nodeTestimonials": {
+      "__typename": "NodeTestimonialConnection",
+      "nodes": [
+        {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-wedding",
+          "title": "Our Dream Wedding Come True",
+          "path": "/testimonials/dream-wedding",
+          "body": {
+            "processed": "<p>From the moment we toured The Sterling Estate, we knew it was the place for our wedding. The Grand Ballroom was absolutely breathtaking, and our coordinator Sarah went above and beyond to make sure every detail was perfect. Our guests are still raving about the food and the stunning garden ceremony. We couldn't have asked for a more magical day.</p>",
+            "summary": "From the moment we toured The Sterling Estate, we knew it was the place for our wedding. The Grand Ballroom was absolutely breathtaking, and our coordinator Sarah went above and beyond to make sure ev"
+          },
+          "clientName": "Jessica & Michael Torres",
+          "eventTypeName": "Wedding Reception",
+          "rating": 5,
+          "eventDateHeld": {
+            "timestamp": 1760821200
+          }
+        },
+        {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-corporate",
+          "title": "Outstanding Corporate Event",
+          "path": "/testimonials/outstanding-corporate-event",
+          "body": {
+            "processed": "<p>We hosted our annual company gala for 250 employees at The Sterling Estate and it was flawless. The AV setup was professional, the catering was outstanding, and the staff anticipated every need before we even asked. Our CEO called it the best company event in our 20-year history. We've already booked for next year.</p>",
+            "summary": "We hosted our annual company gala for 250 employees at The Sterling Estate and it was flawless. The AV setup was professional, the catering was outstanding, and the staff anticipated every need before"
+          },
+          "clientName": "David Chen, VP of Operations",
+          "eventTypeName": "Corporate Gala",
+          "rating": 5,
+          "eventDateHeld": {
+            "timestamp": 1764979200
+          }
+        },
+        {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-birthday",
+          "title": "An Unforgettable 50th Birthday",
+          "path": "/testimonials/unforgettable-birthday",
+          "body": {
+            "processed": "<p>I surprised my husband with his 50th birthday party at the Rooftop Lounge and the entire experience exceeded every expectation. The views, the cocktails, the food — everything was perfection. The event planning team was incredibly creative and helped me pull off the surprise without a hitch. Thank you for making this milestone truly special.</p>",
+            "summary": "I surprised my husband with his 50th birthday party at the Rooftop Lounge and the entire experience exceeded every expectation. The views, the cocktails, the food — everything was perfection. The even"
+          },
+          "clientName": "Angela Washington",
+          "eventTypeName": "Birthday Celebration",
+          "rating": 5,
+          "eventDateHeld": {
+            "timestamp": 1769389200
+          }
+        }
+      ]
+    }
+  }
+}

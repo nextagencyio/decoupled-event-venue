@@ -1,0 +1,224 @@
+{
+  "data": {
+    "nodeVenueSpaces": {
+      "__typename": "NodeVenueSpaceConnection",
+      "nodes": [
+        {
+          "__typename": "NodeVenueSpace",
+          "id": "space-grand-ballroom",
+          "title": "The Grand Ballroom",
+          "path": "/spaces/grand-ballroom",
+          "body": {
+            "processed": "<p>Our flagship space, The Grand Ballroom, is a stunning 8,000-square-foot room featuring soaring 24-foot ceilings, crystal chandeliers, and floor-to-ceiling windows that flood the space with natural light. The room can be configured for seated dinners, cocktail receptions, or theater-style presentations.</p><h2>Highlights</h2><ul><li>Stunning crystal chandelier centerpiece</li><li>Built-in sound system and stage</li><li>Adjustable LED lighting in any color palette</li><li>Direct access to outdoor terrace</li><li>Private bridal suite adjacent</li></ul>",
+            "summary": "Our flagship space, The Grand Ballroom, is a stunning 8,000-square-foot room featuring soaring 24-foot ceilings, crystal chandeliers, and floor-to-ceiling windows that flood the space with natural lig"
+          },
+          "capacity": 500,
+          "squareFootage": 8000,
+          "spaceType": [
+            {
+              "id": "ballroom",
+              "name": "ballroom"
+            }
+          ],
+          "amenities": [
+            "Crystal chandeliers",
+            "Built-in sound system",
+            "Stage",
+            "LED lighting",
+            "Bridal suite",
+            "Coat check"
+          ],
+          "priceRange": "From $5,000",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80",
+            "alt": "Grand ballroom with crystal chandeliers and elegant decor",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeVenueSpace",
+          "id": "space-garden-terrace",
+          "title": "The Garden Terrace",
+          "path": "/spaces/garden-terrace",
+          "body": {
+            "processed": "<p>Surrounded by lush landscaping, the Garden Terrace is a romantic outdoor space perfect for ceremonies and receptions under the stars. Featuring manicured hedges, a stone fountain, and twinkling string lights, this space captures the essence of al fresco elegance.</p><h2>Highlights</h2><ul><li>Manicured gardens with seasonal blooms</li><li>Stone fountain centerpiece</li><li>String light canopy</li><li>Covered pavilion for weather backup</li><li>Dedicated bar area</li></ul>",
+            "summary": "Surrounded by lush landscaping, the Garden Terrace is a romantic outdoor space perfect for ceremonies and receptions under the stars. Featuring manicured hedges, a stone fountain, and twinkling string"
+          },
+          "capacity": 250,
+          "squareFootage": 5000,
+          "spaceType": [
+            {
+              "id": "garden",
+              "name": "garden"
+            },
+            {
+              "id": "courtyard",
+              "name": "courtyard"
+            }
+          ],
+          "amenities": [
+            "String lights",
+            "Stone fountain",
+            "Covered pavilion",
+            "Outdoor bar",
+            "Garden seating",
+            "Heaters available"
+          ],
+          "priceRange": "From $3,500",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&q=80",
+            "alt": "Beautiful garden terrace with string lights and fountain",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeVenueSpace",
+          "id": "space-rooftop-lounge",
+          "title": "The Rooftop Lounge",
+          "path": "/spaces/rooftop-lounge",
+          "body": {
+            "processed": "<p>Perched atop The Sterling Estate, our Rooftop Lounge offers panoramic city views and a modern, sophisticated atmosphere. This contemporary space is ideal for cocktail parties, corporate mixers, and milestone celebrations with a view.</p><h2>Highlights</h2><ul><li>360-degree panoramic city views</li><li>Modern lounge furniture</li><li>Full-service bar with craft cocktails</li><li>Fire pit gathering area</li><li>Climate-controlled retractable roof</li></ul>",
+            "summary": "Perched atop The Sterling Estate, our Rooftop Lounge offers panoramic city views and a modern, sophisticated atmosphere. This contemporary space is ideal for cocktail parties, corporate mixers, and mi"
+          },
+          "capacity": 150,
+          "squareFootage": 3000,
+          "spaceType": [
+            {
+              "id": "rooftop",
+              "name": "rooftop"
+            }
+          ],
+          "amenities": [
+            "Panoramic views",
+            "Retractable roof",
+            "Fire pit",
+            "Full bar",
+            "Lounge furniture",
+            "DJ booth"
+          ],
+          "priceRange": "From $4,000",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+            "alt": "Rooftop lounge with city skyline views at sunset",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeVenueSpace",
+          "id": "space-chapel",
+          "title": "The Chapel",
+          "path": "/spaces/the-chapel",
+          "body": {
+            "processed": "<p>Our intimate Chapel is a beautifully restored historic space featuring original stained glass windows, exposed brick walls, and warm wood accents. Perfect for wedding ceremonies, vow renewals, and small, meaningful gatherings.</p><h2>Highlights</h2><ul><li>Original stained glass windows</li><li>Exposed brick and wood beams</li><li>Baby grand piano</li><li>Natural acoustics</li><li>Candlelit ambiance</li></ul>",
+            "summary": "Our intimate Chapel is a beautifully restored historic space featuring original stained glass windows, exposed brick walls, and warm wood accents. Perfect for wedding ceremonies, vow renewals, and sma"
+          },
+          "capacity": 100,
+          "squareFootage": 1500,
+          "spaceType": [
+            {
+              "id": "chapel",
+              "name": "chapel"
+            }
+          ],
+          "amenities": [
+            "Stained glass windows",
+            "Baby grand piano",
+            "Natural acoustics",
+            "Candlelight fixtures",
+            "Flower arrangements"
+          ],
+          "priceRange": "From $2,000",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
+            "alt": "Intimate chapel with stained glass windows and warm lighting",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1519741497674-611481863552?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1519741497674-611481863552?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
