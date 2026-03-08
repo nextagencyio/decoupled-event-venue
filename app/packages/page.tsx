@@ -7,6 +7,7 @@ import Header from '../components/Header'
 import PackageCard from '../components/PackageCard'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Packages | The Obsidian Hall',
