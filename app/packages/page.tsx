@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 async function getData() {
   try {
     const client = getClient()
-    const { data } = await client.raw(GET_PACKAGES, { first: 50 })
+    const data = await client.raw(GET_PACKAGES, { first: 50 })
     return data?.nodePackages?.nodes || []
   } catch (error) {
     console.error('Error fetching data:', error)
@@ -48,7 +48,7 @@ export default async function ListingPage() {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {items.map((item) => (<PackageCard key={item.id} item={item} />))}
+              {items.map((item: any) => (<PackageCard key={item.id} item={item} />))}
             </div>
           )}
         </div>

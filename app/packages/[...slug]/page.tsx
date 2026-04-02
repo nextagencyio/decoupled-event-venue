@@ -24,7 +24,7 @@ interface PackageByPathData {
 async function getPackage(path: string): Promise<DrupalPackage | null> {
   try {
     const client = getClient()
-    const { data } = await client.raw(GET_PACKAGE_BY_PATH, { path })
+    const data = await client.raw(GET_PACKAGE_BY_PATH, { path })
     return data?.route?.entity || null
   } catch (error) {
     console.error('Error fetching package:', error)
