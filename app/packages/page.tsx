@@ -1,6 +1,5 @@
+import { getClient } from '@/lib/drupal-client'
 import { Metadata } from 'next'
-import { headers } from 'next/headers'
-import { getServerApolloClient } from '@/lib/apollo-client'
 import { GET_PACKAGES } from '@/lib/queries'
 import { PackagesData } from '@/lib/types'
 import Header from '../components/Header'
@@ -16,9 +15,8 @@ export const metadata: Metadata = {
 
 async function getData() {
   try {
-    const requestHeaders = await headers()
-    const apolloClient = getServerApolloClient(requestHeaders)
-    const { data } = await apolloClient.query<PackagesData>({ query: GET_PACKAGES, variables: { first: 50 }, fetchPolicy: 'cache-first' })
+    const client = getClient()
+    const { data } = await client.raw(GET_PACKAGES, { first: 50 })
     return data?.nodePackages?.nodes || []
   } catch (error) {
     console.error('Error fetching data:', error)

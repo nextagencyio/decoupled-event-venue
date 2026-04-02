@@ -1,6 +1,5 @@
+import { getClient } from '@/lib/drupal-client'
 import { Metadata } from 'next'
-import { headers } from 'next/headers'
-import { getServerApolloClient } from '@/lib/apollo-client'
 import { GET_VENUE_SPACES } from '@/lib/queries'
 import { VenueSpacesData } from '@/lib/types'
 import Header from '../components/Header'
@@ -16,9 +15,8 @@ export const metadata: Metadata = {
 
 async function getData() {
   try {
-    const requestHeaders = await headers()
-    const apolloClient = getServerApolloClient(requestHeaders)
-    const { data } = await apolloClient.query<VenueSpacesData>({ query: GET_VENUE_SPACES, variables: { first: 50 }, fetchPolicy: 'cache-first' })
+    const client = getClient()
+    const { data } = await client.raw(GET_VENUE_SPACES, { first: 50 })
     return data?.nodeVenueSpaces?.nodes || []
   } catch (error) {
     console.error('Error fetching data:', error)

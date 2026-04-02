@@ -1,6 +1,5 @@
 import './globals.css'
 import { Playfair_Display, Lato } from 'next/font/google'
-import ApolloProvider from './components/providers/ApolloProvider'
 import { DemoModeBanner } from './components/DemoModeBanner'
 import { Viewport, type Metadata } from 'next'
 
@@ -43,7 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${playfair.variable} ${lato.variable}`}>
       <body className="font-sans bg-primary-950 text-gray-100 antialiased">
         <DemoModeBanner />
-        <ApolloProvider>{children}</ApolloProvider>
+        {children}
       </body>
     </html>
   )
