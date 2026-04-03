@@ -1,4 +1,5 @@
 import { getClient } from '@/lib/drupal-client'
+import { GET_HOMEPAGE_DATA } from '@/lib/queries'
 import HomepageRenderer from './components/HomepageRenderer'
 import SetupGuide from './components/SetupGuide'
 import ContentSetupGuide from './components/ContentSetupGuide'
@@ -18,11 +19,18 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Home() {
   const configStatus = checkConfiguration()
   if (!configStatus.isConfigured) return <SetupGuide missingVars={configStatus.missingVars} />
-  const client = getClient()
-  const homepageContent = await client.getEntryByPath('/') as any
-  if (!homepageContent) {
+  try {
+    const client = getClient()
+    const data = await client.raw(GET_HOMEPAGE_DATA)
+    const homepageContent = data?.nodeHomepages?.nodes?.[0] || null
+    if (!homepageContent) {
+      const drupalBaseUrl = process.env.NEXT_PUBLIC_DRUPAL_BASE_URL
+      return <ContentSetupGuide drupalBaseUrl={drupalBaseUrl} />
+    }
+    return <HomepageRenderer homepageContent={homepageContent} />
+  } catch (error) {
+    console.error('Error fetching homepage:', error)
     const drupalBaseUrl = process.env.NEXT_PUBLIC_DRUPAL_BASE_URL
     return <ContentSetupGuide drupalBaseUrl={drupalBaseUrl} />
   }
-  return <HomepageRenderer homepageContent={homepageContent} />
 }
